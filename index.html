@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Linux常用程序</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-04-11 四"/>
+<meta name="author" content="Yongqi Ge"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/wang.css" />
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Linux常用程序</h1>
+
+<p>将自己常用的linux程序整理总结如下，也可供大家参考。安装方法不做介绍。
+</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 终端 </a></li>
+<li><a href="#sec-2">2 输入法 </a></li>
+<li><a href="#sec-3">3 编辑器 </a></li>
+<li><a href="#sec-4">4 文档办公 </a></li>
+<li><a href="#sec-5">5 网络应用 </a></li>
+<li><a href="#sec-6">6 上传下载 </a></li>
+<li><a href="#sec-7">7 图形图像 </a></li>
+<li><a href="#sec-8">8 多媒体 </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 终端 </h2>
+<div class="outline-text-2" id="text-1">
+
+<ol>
+<li>
+<b>gnome-terminal</b> : Gnome环境下的终端程序
+</li>
+<li>
+<b>konsole</b> :KDE的终端程序
+</li>
+<li>
+<b>urxvt</b> :轻量级高定制终端
+</li>
+<li>
+<b>yakuake</b> :拉幕式终端，不用总是切换
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 输入法 </h2>
+<div class="outline-text-2" id="text-2">
+
+<ol>
+<li>
+<b>ibus</b> : 个人觉得比scim好用。
+</li>
+<li>
+<b>fcitx</b> :小企鹅输入法。
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 编辑器 </h2>
+<div class="outline-text-2" id="text-3">
+
+<ol>
+<li>
+<b>Emacs</b> :神的编辑器，功能强大，扩展性强。
+</li>
+<li>
+<b>VIM</b> ：我只用它来编辑一些短小的配置文件。
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 文档办公 </h2>
+<div class="outline-text-2" id="text-4">
+
+<ol>
+<li>
+<b>WPS Office</b> :在Linux下如果想兼容MSoffice，目前这个可靠些。
+</li>
+<li>
+<b>Tex/LaTex</b> :专业论文和书籍排版首选工具，Emacs有相应扩展。
+</li>
+<li>
+<b>org-mode</b> :这个是emacs的扩展，可以用来写wiki,blog,日程安排。
+</li>
+<li>
+<b>evince</b> :Gnome下PDF阅读工具。
+</li>
+<li>
+<b>chmsee</b> :chm阅读。
+</li>
+<li>
+<b>GoldenDict</b> :强大的翻译软件。
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 网络应用 </h2>
+<div class="outline-text-2" id="text-5">
+
+<ol>
+<li>
+<b>pidgin</b> :多协议，GTK。
+</li>
+<li>
+<b>Web QQ</b> :少用QQ吧，如果要用，用这个就行了，少折腾。
+</li>
+<li>
+<b>iptux</b> :局域网信使，可以与飞鸽，飞秋等通信。
+</li>
+<li>
+<b>xchat</b> :IRC聊天软件。
+</li>
+<li>
+<b>Firefox</b> :速度一般，插件多。
+</li>
+<li>
+<b>Chrome</b> :有linux版，速度快。
+</li>
+<li>
+<b>w3m</b> :字符界面浏览器。
+</li>
+<li>
+<b>qterm</b> :上BBS。当然你也可以用终端。
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 上传下载 </h2>
+<div class="outline-text-2" id="text-6">
+
+<ol>
+<li>
+<b>lftp</b> :命令行ftp工具，很好用。
+</li>
+<li>
+<b>deluge</b> :PyGTK, BT客户端。
+</li>
+<li>
+<b>wget</b> :命令行下载工具。
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 图形图像 </h2>
+<div class="outline-text-2" id="text-7">
+
+<ol>
+<li>
+<b>MetaPost</b> :描述性绘图工具。
+</li>
+<li>
+<b>Dio</b> ：流程图。
+</li>
+<li>
+<b>gThumb</b> :图片浏览软件。
+
+</li>
+</ol>
+</div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> 多媒体 </h2>
+<div class="outline-text-2" id="text-8">
+
+<ol>
+<li>
+<b>xmms</b> :支持mp3,ogg等，Emacs下可扩展。
+</li>
+<li>
+<b>audacious</b> :支持无损。
+</li>
+<li>
+<b>mplayer</b> :支持全面，字幕处理强悍。
+</li>
+<li>
+<b>VLC</b> :貌似这个现在用的人多，我不怎么用。
+
+
+
+</li>
+</ol>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Yongqi Ge
+<a href="mailto:geyongqi@163.com">&lt;geyongqi@163.com&gt;</a>
+</p>
+<p class="date"> Date: 2013-04-11 四</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

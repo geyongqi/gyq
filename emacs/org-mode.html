@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>ORG-MODE使用方法整理</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-04-12 五"/>
+<meta name="author" content="Yongqi Ge"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/wang.css" />
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">ORG-MODE使用方法整理</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 导入标题信息 </a></li>
+<li><a href="#sec-2">2 字体 </a></li>
+<li><a href="#sec-3">3 列表 </a></li>
+<li><a href="#sec-4">4 列表/标题快捷键 </a></li>
+<li><a href="#sec-5">5 潜入元数据 </a></li>
+<li><a href="#sec-6">6 表格 </a></li>
+<li><a href="#sec-7">7 脚注 </a></li>
+<li><a href="#sec-8">8 分割线 </a></li>
+<li><a href="#sec-9">9 标记tags </a></li>
+<li><a href="#sec-10">10 导出与发布 </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 导入标题信息 </h2>
+<div class="outline-text-2" id="text-1">
+
+
+
+
+<pre class="example">C-c C-e t
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 字体 </h2>
+<div class="outline-text-2" id="text-2">
+
+
+
+
+<pre class="example">*粗体*
+/斜体/
++删除线+
+_下划线_
+下标： H_2 O
+上标： E=mc^2
+等宽字：  =git=
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 列表 </h2>
+<div class="outline-text-2" id="text-3">
+
+
+
+
+<pre class="example">无序列表以'-'、'+'或者'*'开头
+有序列表以'1.'或者'1)'开头
+描述列表用'::'
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 列表/标题快捷键 </h2>
+<div class="outline-text-2" id="text-4">
+
+
+
+
+<pre class="example">S-TAB   循环切换整个文档的大纲状态（折叠、打开下一级、打开全部）
+TAB     循环切换光标所在的大纲状态
+C-c C-n/p       移动到下上一个标题（不断标题是哪一级）
+C-c C-f/b       移动到同一级别的下/上标题
+C-c C-u         跳到上一级标题
+C-c C-j         切换到大纲预览状态
+M-RET   插入一个同级别的标题
+M-S-RET 插入一个同级别的TODO标题
+M-LEFT/RIGHT    将当前标题升/降级
+M-S-LEFT/RIGHT  将子树升/降级
+M-S-UP/DOWN     将子树上/下移动
+C-c *   将本行设为标题或者正文
+C-c C-w 将子树或者区域移动到另一个标题处（跨缓冲区）
+C-c C-x b       在新缓冲区显示当前分支
+C-c /   只列出包含搜索结果的大纲，并高亮，支持多种搜索方式
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 潜入元数据 </h2>
+<div class="outline-text-2" id="text-5">
+
+
+<p>
+元数据有以下几种：
+</p>
+
+
+<pre class="example">s    #+begin_src ... #+end_src 
+e    #+begin_example ... #+end_example  : 单行的例子以冒号开头
+q    #+begin_quote ... #+end_quote      通常用于引用，与默认格式相比左右都会留出缩进
+v    #+begin_verse ... #+end_verse      默认内容不换行，需要留出空行才能换行
+c    #+begin_center ... #+end_center 
+l    #+begin_latex ... #+end_latex 
+L    #+latex: 
+h    #+begin_html ... #+end_html 
+H    #+html: 
+a    #+begin_ascii ... #+end_ascii 
+A    #+ascii: 
+i    #+index: line 
+I    #+include: line
+</pre>
+
+
+
+<p>
+快捷键 &lt;s 然后TAB
+</p></div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 表格 </h2>
+<div class="outline-text-2" id="text-6">
+
+<p>在某一行顶格的位置输入’|'，然后输入表格第一行第一列的内容，再输入’|'，然后输入表格的的一行第二列的内容，以此类推。当第一行输入完成后，按 TAB， org mode 会把当前行对齐，然后为你创造出表格的下一行，让你继续输入。用 TAB 和 S+TAB可以在表格中正向或反向的移动。 
+</p></div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> 脚注 </h2>
+<div class="outline-text-2" id="text-7">
+
+<p>C-c C-x f
+[fn:1]
+</p></div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> 分割线 </h2>
+<div class="outline-text-2" id="text-8">
+
+<p>五条短线或以上显示为分割线
+
+</p>
+<hr/>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> 标记tags </h2>
+<div class="outline-text-2" id="text-9">
+
+<p>如果希望文档中的所有标题都具有某些标签，只需要定义文档元数据：
+</p>
+
+
+<pre class="example">#+FILETAGS: :Peter:Boss:Secret:
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> 导出与发布 </h2>
+<div class="outline-text-2" id="text-10">
+
+
+
+<p>
+[fn:1] 资料收集于网络。
+</p></div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Yongqi Ge
+<a href="mailto:geyongqi@163.com">&lt;geyongqi@163.com&gt;</a>
+</p>
+<p class="date"> Date: 2013-04-12 五</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

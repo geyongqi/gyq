@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Emacs快捷键</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-04-12 五"/>
+<meta name="author" content="Yongqi Ge"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/wang.css" />
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Emacs快捷键</h1>
+
+<p>这部分内容基本上都是网上收集的资料，时间长就不给出原文出处了。
+</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Emacs快捷键 </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Emacs快捷键 </h2>
+<div class="outline-text-2" id="text-1">
+
+<ul>
+<li>
+文件操作
+
+</li>
+</ul>
+
+
+<pre class="example">C-x C-f 打开文件,出现提示时输入/username@host:filepath可编辑FTP文件
+C-x C-v 打开一个文件，取代当前缓冲区
+C-x C-s 保存文件
+C-x C-w 存为新文件
+C-x i 插入文件
+C-x C-q 切换为只读或者读写模式
+C-x C-c 退出Emacs
+</pre>
+
+
+
+<ul>
+<li>
+编辑操作
+
+</li>
+</ul>
+
+
+<pre class="example">C-f 前进一个字符
+C-b 后退一个字符
+M-f 前进一个字
+M-b 后退一个字
+C-a 移到行首
+C-e 移到行尾
+M-a 移到句首
+M-e 移到句尾
+C-p 后退一行
+C-n 前进一行
+M-x goto-line 跳到指定行
+C-v 向下翻页
+M-v 向上翻页
+M-&lt; 缓冲区头部
+M-&gt; 缓冲区尾部
+C-M-f 向前匹配括号
+C-M-b 向后匹配括号
+C-l 当前行居中
+M-n or C-u n 重复操作随后的命令n次
+C-u 重复操作随后的命令4次
+C-u C-u 重复操作随后的命令8次
+C-x ESC ESC 执行历史命令记录，M-p选择上一条命令，M-n选择下一条命令
+C-d 删除一个字符
+M-d 删除一个字
+C-k 删除一行
+M-k 删除一句
+C-w 删除标记区域
+C-f 前进一个字符
+C-b 后退一个字符
+M-f 前进一个字
+M-b 后退一个字
+C-a 移到行首
+C-e 移到行尾
+M-e 移到句尾
+C-p 后退一行
+C-n 前进一行
+M-x goto-line 跳到指定行
+C-v 向下翻页
+M-v 向上翻页
+M-&lt; 缓冲区头部
+M-&gt; 缓冲区尾部
+C-M-f 向前匹配括号
+C-M-b 向后匹配括号
+C-l 当前行居中
+M-n or C-u n 重复操作随后的命令n次
+C-u 重复操作随后的命令4次
+C-u C-u 重复操作随后的命令8次
+C-x ESC ESC 执行历史命令记录，M-p选择上一条命令，M-n选择下一条命令
+C-d 删除一个字符
+M-d 删除一个字
+C-k 删除一行
+M-k 删除一句
+C-w 删除标记区域
+C-y 粘贴删除的内容
+C-@ 标记开始区域
+C-x h 标记所有文字
+C-x C-x 交换光标位置和区域标记区开头
+M-w 复制标记区域
+C-_ or C-x u 撤消操
+
+</pre>
+
+
+
+<ul>
+<li>
+窗口操作
+
+</li>
+</ul>
+
+
+<pre class="example">C-x 0 关闭本窗口
+C-x 1 只留下一个窗口
+C-x 2 垂直均分窗口
+C-x 3 水平均分窗口
+C-x o 切换到别的窗口
+C-x s 保存所有窗口的缓冲
+C-x b 选择当前窗口的缓冲区
+C-x ^ 纵向扩大窗口
+C-x } 横向扩大窗口
+</pre>
+
+
+
+<ul>
+<li>
+缓冲区列表操作
+
+</li>
+</ul>
+
+
+<pre class="example">C-x C-b 打开缓冲区列表
+d or k 标记为删除
+~ 标记为未修改状态
+% 标记为只读
+s 保存缓冲
+u 取消标记
+x 执行标记的操作
+f 在当前窗口打开该缓冲区
+o 在其他窗口打开该缓冲区
+</pre>
+
+
+
+<ul>
+<li>
+目录操作
+
+</li>
+</ul>
+
+
+<pre class="example">C-x d 打开目录模式
+s 按日期/文件名排序显示
+v 阅读光标所在的文件
+q 退出阅读的文件
+d 标记为删除
+x 执行标记
+D 马上删除当前文件
+C 拷贝当前文件
+R 重名名当前文件
++ 新建文件夹
+Z 压缩文件
+! 对光标所在的文件执行SHELL命令
+g 刷新显示
+i 在当前缓冲区的末尾插入子目录的内容
+
+[n]m 标记光标所在的文件，如果指定n，则从光标所在的文件起后n个文件被标记
+[n]u 取消当前光标标记的文件，n的含义同上
+t 反向标记文件
+%-m 正则标记
+
+q 退出目录模式
+</pre>
+
+
+
+<ul>
+<li>
+程序编译
+
+</li>
+</ul>
+
+
+<pre class="example">M-x compile 执行编译操作
+M-x gdb GDB排错
+M-x dbx DBX排错
+M-x xdb XDB排错
+M-x sdb SDB排错
+</pre>
+
+
+
+<ul>
+<li>
+搜索模式
+
+</li>
+</ul>
+
+
+<pre class="example">C-s key 向前搜索
+C-s 查找下一个
+ENTER 停止搜索
+C-r key 反向搜索
+C-s C-w 以光标所在位置的字为关键字搜索
+C-s C-s 重复上次搜索
+C-r C-r 重复上次反向搜索
+C-s ENTER C-w 进入单词搜索模式
+C-r ENTER C-w 进入反向单词搜索模式
+M-x replace-string ENTER search-string ENTER 替换
+M-% search-string ENTER replace-string ENTER 交互替换
+C-r 在进入查找/替换模式后，该命令进入迭代编辑模式
+C-M-x 退出迭代编辑模式，返回到查找/替换模式
+C-M-s 向前正则搜索
+C-M-r 向后正则搜索
+C-M-% 正则交互替换
+</pre>
+
+
+
+<ul>
+<li>
+SHELL模式
+
+</li>
+</ul>
+
+
+<pre class="example">C-c C-c 相当于Bash下的C-c
+C-c C-z 相当于Bash下的C-z
+C-c C-d 相当于Bash下的C-d
+M-p 执行前一条命令
+C-n 执行下一条命令
+C-c C-o 删除最后一条命令产生的输出
+C-c C-r 屏幕滚动到最后一条命令输出的开头
+C-c C-e 屏幕滚动到最后一套命令输出的结尾
+C-c C-p 查看前一条命令的输出
+C-c C-n 查看后一条命令的输出
+</pre>
+
+
+
+
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Yongqi Ge
+<a href="mailto:geyongqi@163.com">&lt;geyongqi@163.com&gt;</a>
+</p>
+<p class="date"> Date: 2013-04-12 五</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
